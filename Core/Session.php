@@ -24,16 +24,17 @@ class Session
   {
     unset($_SESSION['_flash']);
   }
-  public static function flush (){
+  public static function flush()
+  {
     $_SESSION = [];
   }
-  public static function destroy(){
+  public static function destroy()
+  {
     static::flush();
-    
+
     session_destroy();
 
     $param = session_get_cookie_params();
     setcookie(session_name('PHPSESSID'), "", time() - 3600, $param['path'], $param['domain'], $param['secrue'], $param['httponly']);
-  }
   }
 }
