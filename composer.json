@@ -1,0 +1,17 @@
+{
+	"name": "yuszhaq/demo",
+	"type": "project",
+	"authors": [
+		{
+			"name": "yuszhaqDev",
+			"email": "yuszhaq@gmail.com"
+		}
+	],
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"Core\\": "Core/",
+			"Http\\": "Http/"
+		}
+	}
+}
