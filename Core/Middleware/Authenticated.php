@@ -2,7 +2,7 @@
 
 namespace Core\Middleware;
 
-class Auth
+class Authenticated
 {
   public function handle()
   {
